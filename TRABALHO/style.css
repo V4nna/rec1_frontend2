@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/*================================================================================================
+=========================================================================================
+=====================================================================================================*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+
+}
+.body_login{
+  width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #0c0ce94d;
+    justify-content: center;
+    align-items: center;
+}
+
+.body_site{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #0c0ce94d;
+  flex-direction: column;
+
+}
+
+:root{
+  --cor-primaria: #94bc68;
+  --cor-cinza-escuro: #e5e5e5;
+  --cor-cinza-claro: #f0f0f0;
+  --espacamento-padrao: 2rem;
+  --espacamento-minimo: 0.25rem;
+  --espacamento-inputs: 1rem;
+}
+
+header {
+	box-shadow: black 1px 5px 18px 0px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.pesquisa-container {
+	display: flex;
+	align-items: center;
+}
+
+.search-container input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+}
+
+.pesquisa-container button {
+  border: none;
+  background-color: #6c63ff;
+  padding: 2px 15px;
+  border-radius: 5px;
+	color: white;
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.pesquisa-container button :hover {
+  background-color: #6b63fff1;
+}
+
+.material-icons-buscar {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.icon-container {
+	display: flex;
+	align-items: center;
+}
+
+.icon-container i {
+	font-size: 24px;
+	margin-left: 10px;
+	color: white;
+	cursor: pointer;
+}
+
+/*===================================================================*/
+
+.container-part1 {
+    display: flex;
+    margin: 3%;
+  }
+  .left {
+    flex: 65%;
+  }
+  .right {
+    flex: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .image2 {
+    width: 45%;
+    height: 45%;
+  }
+
+  /*================================================================*/
+
+  .container-part2 {
+    display: flex;
+  
+  }
+  .esquer {
+    flex: 30%;
+  }
+    .image3 {
+    width: 99%;
+    height: auto;
+  }
+  .direita {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .container-txt{
+    flex: 15%;
+    margin-left: 5%;
+
+  }
+  .container-minis{
+    flex: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .image4 {
+    width: 75%;
+    height: 70%;
+   
+  }
+  figcaption {
+    margin-right: 50%; 
+  }
+
+  /*====================================================================================*/
+
+footer {
+  width: 100%;
+  box-shadow: inset black 0px 4px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  background-color: #333;
+  color: rgb(0 0 0);
+}
+.logo-container {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: flex-start;
+}
+img {
+    width: 30%;
+    height: auto;
+}
+
+/*==============================================================================
+================================MEDIA QUERIE===================================
+====================================================================================*/
+      @media(max-width:760px){
+          .container-part1 {
+              display: flex;
+              margin: 5%;
+              flex-direction: column;
+          }
+
+          .left {
+            padding-bottom: 5%;
+          }
+          .right {
+            padding-top: 5%;
+            flex: 40%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .image2 {
+            width: 45%;
+            height: 140px;
+          }
+        
+          /*================================================================*/
+        
+          .container-part2 {
+              display: flex;
+              flex-direction: column-reverse}
+          .image4 {
+            width: 100%;
+            height: 75%;
+          }
+          figcaption {
+            margin-right: 0%;
+          }
+         }
+         @media screen and (max-width: 1330px) {
+          .form-image {
+              display: none;
+          }
+          .container {
+              width: 50%;
+          }
+          .form {
+              width: 100%;
+          }
+      }
+      
+      @media screen and (max-width: 1064px) {
+          .container {
+              width: 90%;
+              height: auto;
+          }
+          .input-group {
+              flex-direction: column;
+              z-index: 5;
+              padding-right: 5rem;
+              max-height: 10rem;
+              overflow-y: scroll;
+              flex-wrap: nowrap;
+          }
+          .gender-inputs {
+              margin-top: 2rem;
+          }
+          .gender-group {
+              flex-direction: column;
+          }
+          .gender-title h6 {
+              margin: 0;
+          }
+          .gender-input {
+              margin-top: 0.5rem;
+          }
+      }
+/*==============================================================================
+================================LOGIN===================================
+====================================================================================*/
+.container {
+  width: 85%;
+  height: 90vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fde3a7d7;}
+
+.form-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+}
+
+.login-button button {
+  border: none;
+  background-color: #6c63ff;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: #6b63fff1;
+}
+
+.login-button button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #6c63ff;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  font-size: 0.8rem;
+}
+
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid #6c63ff;
+}
+
+.input-box label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 .5rem;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+}
+
+.gender-input input {
+  margin-right: 0.35rem;
+}
+
+.gender-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.continue-button button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #6c63ff;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button button:hover {
+  background-color: #6b63fff1;
+}
+
+.continue-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+
